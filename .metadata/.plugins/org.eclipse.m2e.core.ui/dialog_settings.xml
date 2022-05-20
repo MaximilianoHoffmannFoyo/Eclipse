@@ -69,6 +69,7 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="/home/maxi/eclipse-workspace/rentacarJPA-master"/>
 			<item value="/home/maxi/Descargas/rentacarJPA-master"/>
 		</list>
 		<list key="projectNameTemplate">

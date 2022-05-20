@@ -7,6 +7,7 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.Query;
 
+import controladores.ControladorAventura;
 import entidades.Aventura;
 
 
@@ -16,6 +17,15 @@ public class Main {
 		
 		EntityManagerFactory entityManagerFactory = Persistence.createEntityManagerFactory("pyd");
 		EntityManager em = entityManagerFactory.createEntityManager();
+		
+		Aventura av = new Aventura();
+		av.setCodAventura(15);
+		av.setNombre("la nueva");
+		av.setDescripcion("sin descripcion");
+		av.setDificultad("por definir");
+		
+		ControladorAventura CA = new ControladorAventura();
+		CA.crearAventura(av);
 		
 		Query q = em.createNamedQuery("Aventura.findAll");
 		

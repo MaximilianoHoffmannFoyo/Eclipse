@@ -62,4 +62,10 @@ public class Personaje implements Serializable {
 		this.aventura = aventura;
 	}
 
+	@Override
+	public String toString() {
+		return "Personaje [codJugador=" + codJugador + ", nivel=" + nivel + ", nombre=" + nombre + ", aventura="
+				+ aventura + "]";
+	}
+
 }
